@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Tea</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <link rel="stylesheet" href="Css/b_menu.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <div class="brand">
+                    <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                    <div><h1 class="name">Koala Tea</h1></div>
+                </div>
+                <div class="navbar" id="navbar">
+                    <a href="ass_homepage.html">Home</a>
+                    <a href="ass_menu.html">Menu</a>
+                    <a href="ass_aboutus.html">About Us</a>
+                    <a href="ass_review.html">Review</a>
+                    <a href="ass_faq.html">FAQ</a>
+                    <a href="ass_membership.html">Membership</a>
+                </div>
+                    
+                <div class="icon">
+                    <i id="search" class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                    <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                    <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                    <i id="bars" class="fa-solid fa-bars" onclick="navBar2()"></i>
+                </div>
+                <div id="search-form">
+                    <input type="search" id="search-box" placeholder="search...">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="menu">
+        <p >Menu</p>
+        <h1>Milk Tea</h1>
+        <div id="box-containermilktea">
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)"></i>
+                <div class="milktea1">
+                    <img class="milk1" src="Image/milk1.png" alt="Pearl Milk Tea" id="milk1">
+                    <h3>PEARL MILK TEA</h3>
+                    <span>RM7.50</span>
+                    <a href="customize.html" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="milktea2">
+                    <img class="milk2" src="Image/milk2.png" alt="Classic Roasted Milk Tea">
+                    <h3>CLASSIC ROASTED MILK TEA</h3>
+                    <span>RM7.50</span>
+                    <a href="customize1.html" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="milktea3">
+                    <img class="milk3" src="Image/milk3.png" alt="SIGNATURE BROWN SUGAR Pearl Milk Tea">
+                    <h3>SIGNATURE BROWN SUGAR PEARL MILK TEA</h3>
+                    <span>RM7.50</span>
+                    <a href="customize2.html" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="milktea4">
+                    <img class="milk4" src="Image/milk4.png" alt="Red Bean Pearl Milk Tea">
+                    <h3>RED BEAN PEARL MILK TEA</h3>
+                    <span>RM8.40</span>
+                    <a href="customize3.html" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="milktea5">
+                    <img class="milk5" src="Image/milk5.png" alt="BLACK DIAMOND MILK TEA">
+                    <h3>BLACK DIAMOND MILK TEA</h3>
+                    <span>RM8.60</span>
+                    <a href="customize4.html" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="milktea6">
+                    <img class="milk6" src="Image/milk6.png" alt="HAZELNUT MILK TEA">
+                    <h3>HAZELNUT MILK TEA</h3>
+                    <span>RM7.60</span>
+                    <a href="customize5.html" class="atc">Order Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="menubtn">
+            <a href="ass_menu.html">1</a>
+            <a href="ass_menu2.html">2</a>
+            <a href="ass_menu3.html">3</a>
+            <p>...</p>
+            <a href="ass_menu2.html" class="fa-solid fa-arrow-right"></a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="column">
+            <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+            <div class="contact-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="column1">
+            <div><a href="ass_contact.html">Contact</a></div>   
+            <div>Career</div>
+            <div>Blog</div>
+        </div>
+        <div class="column2">
+            <div>Privacy</div>
+            <div>Security</div>
+            <div>Outlet</div>
+        </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+    </script>
+</body>
+</html>

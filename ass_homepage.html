@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Tea</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <link rel="stylesheet" href="Css/b_home.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <div class="brand">
+                    <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                    <div><h1 class="name">Koala Tea</h1></div>
+                </div>
+                <div class="navbar" id="navbar">
+                    <a href="ass_homepage.html">Home</a>
+                    <a href="ass_menu.html">Menu</a>
+                    <a href="ass_aboutus.html">About Us</a>
+                    <a href="ass_review.html">Review</a>
+                    <a href="ass_faq.html">FAQ</a>
+                    <a href="ass_membership.html">Membership</a>
+                </div>
+                    
+                <div class="icon" id="search-icon">
+                    <i id="search" class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                    <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                    <a href="ass_member_account.html" id="login" class="fa-solid fa-user"></a>
+                    <i id="bars" class="fa-solid fa-bars" onclick="navBar1()"></i>
+                </div>
+                <div id="search-form">
+                    <input type="search" id="search-box" placeholder="search...">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <article>
+        <img src="Image/background.png" alt="backgroundmap" usemap="#koalamap" class="backgrounpic">
+
+        <map id="map"name="koalamap">
+            <area shape="poly" coords="57,79 497,85 495,113 812,121 790,497 769,521 739,892 686,922
+             501,924 385,882 385,850 317,852 351,793 351,761 283,729 263,716 200,703 157,680 115,718 85,399"
+             alt="milktea" href="ass_aboutus.html" >
+        </map>
+        <div class="content">
+            <h1>A GOOD DAY START <br/>WITH NICE TEA</h1>
+        </div>
+        <a href="ass_menu.html" class="btn-primary">MENU</a>
+
+    </article>
+    <footer>
+        <div class="column">
+            <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+            <div class="contact-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="column1">
+            <div><a href="ass_contact.html">Contact</a></div>
+            <div>Career</div>
+            <div>Blog</div>
+        </div>
+        <div class="column2">
+            <div>Privacy</div>
+            <div>Security</div>
+            <div>Outlet</div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Koala Tea</title>
+  <link rel="stylesheet" href="Css/b_review.css"/>
+  <link rel="icon" type="image/x-icon" href="Image/logo.png">
+  <script src="javascript.js"></script>
+</head>
+
+<body>
+  <div id="preloader">
+    <img src="Image/loader.gif" alt="">
+  </div>
+  <header>
+    <nav>
+      <div class="navbar-container">
+        <div class="brand">
+          <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+          <div>
+            <h1 class="name">Koala Tea</h1>
+          </div>
+        </div>
+        <div class="navbar" id="navbar">
+          <a href="ass_homepage.html">Home</a>
+          <a href="ass_menu.html">Menu</a>
+          <a href="ass_aboutus.html">About Us</a>
+          <a href="ass_review.html">Review</a>
+          <a href="ass_faq.html">FAQ</a>
+          <a href="ass_membership.html">Membership</a>
+      </div>
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+          <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+          <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+          <i id="bars" class="fa-solid fa-bars" onclick="navBar2()"></i>
+        </div>
+        <div id="search-form">
+          <input type="search" id="search-box" placeholder="search...">
+          <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+          <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section>
+    <div class="testimonials">
+      <div class="inner">
+        <h1>Reviews</h1>
+        <div class="border"></div>
+  
+        <div class="row">
+          <div class="col">
+            <div class="testimonial">
+              <img src="Image/reviewpic1.png" alt="">
+  
+              <div class="customer">Jonathan</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+  
+              <p>
+                Absolutely love the milk tea here! The rich and creamy flavor is a delight for my taste buds. It's the
+                perfect balance of sweetness, and I can't get enough of it!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="testimonial">
+              <img src="Image/reviewpic2.png" alt="">
+  
+              <div class="customer">Jessica</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+  
+              <p>
+                Milk tea perfection! The smooth and velvety texture paired with the fragrant tea is heavenly. It's my
+                go-to drink for a comforting and satisfying pick-me-up!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="testimonial">
+              <img src="Image/reviewpic3.png" alt="">
+  
+              <div class="customer">James</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+  
+              <p>
+                I'm addicted to this milk tea! The taste is consistently amazing, and I appreciate the customizable
+                sweetness level. It's a fantastic treat any time of day!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="testimonial">
+              <img src="Image/reviewpic4.png" alt="">
+              <div class="customer">Luke</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+  
+              <p>
+                This milk tea is a game-changer! The blend of tea and creamy goodness is pure magic. It's a delightful
+                escape from the ordinary, and I'm hooked!
+              </p>
+            </div>
+          </div>
+  
+          <div class="col">
+            <div class="testimonial">
+              <img src="Image/reviewpic5.png" alt="">
+  
+              <div class="customer">Mary</div>
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+  
+              <p>
+                Incredible milk tea experience! It's like a warm hug in a cup. The quality and taste are unmatched, making
+                it my all-time favorite beverage. Highly recommended!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  <footer>
+    <div class="column">
+      <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+      <div class="contact-icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+    <div class="column1">
+      <div><a href="ass_contact.html">Contact</a></div>
+      <div>Career</div>
+      <div>Blog</div>
+    </div>
+    <div class="column2">
+      <div>Privacy</div>
+      <div>Security</div>
+      <div>Outlet</div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+  <script>
+      var loader = document.getElementById('preloader');
+
+      window.addEventListener("load", function(){
+      loader.style.display = 'none';
+  })
+  </script>
+</body>
+
+</html>

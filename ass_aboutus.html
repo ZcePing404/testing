@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Tea</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <link rel="stylesheet" href="Css/b_aboutus.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <div class="brand">
+                    <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                    <div><h1 class="name">Koala Tea</h1></div>
+                </div>
+                <div class="navbar" id="navbar">
+                    <a href="ass_homepage.html">Home</a>
+                    <a href="ass_menu.html">Menu</a>
+                    <a href="ass_aboutus.html">About Us</a>
+                    <a href="ass_review.html">Review</a>
+                    <a href="ass_faq.html">FAQ</a>
+                    <a href="ass_membership.html">Membership</a>
+                </div>
+                    
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                    <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                    <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                    <i id="bars" class="fa-solid fa-bars"  onclick="navBar2()"></i>
+                </div>
+                <div id="search-form">
+                    <input type="search" id="search-box" placeholder="search...">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <article>
+        <video autoplay loop muted src="Image/shop.mp4"></video>
+        <p><span>#GetToKnowUs</span><br>Ever wondered how it all started? Well, say no more!</p>
+    </article>
+    <section id="about">
+        <div class="content1">
+            <h1>The Story of Koala Tea</h1>
+            <p>The beautiful heritage of tea faces the danger of being forgotten every day, and so one day, a team of tea 
+                lovers decided to take on the mission of resuscitating and reintroducing the Malaysia tea culture to the 
+                world &mdash; with a modern twist. And thus, Koala Tea was born. Koala Tea is a fresh milk tea shop whose 
+                sole mission was to reintroduce and bring back the Malaysia culture of tea to the world and has done so in a 
+                most excellent way.<br/><br/>
+                Our shop opened in 2018 and started as a small shop through years and years of trying out the best recipe
+                for a milk tea,until now we are the best in Malaysia!
+            </p>
+            
+        </div>
+        <div class="content2">
+            <div id="tea">
+                <img src="Image/goodtea.jpg" alt="Good Tea">
+                <p>Koala insists on using original premium tea leaves from Koala Organic Tea Farm located at 1,588 metres
+                   above sea level in Cameron Highlands, which serves as the optimal atmosphere for the growth of tea plants.</p>
+            </div>
+            <div id="milk">
+                <p>Using only imported fresh New Zealand milk to pair with our premium tea as New Zealand produces some of
+                   the world's best quality milk.</p>
+                   <img src="Image/goodmilk.jpg" alt="Good Milk">
+            </div>
+            <div id="fruit">
+                <img src="Image/goodfruit.jpg" alt="Good Fruit">
+                <p>Each and every local daily supplied fresh fruits are carefully picked to assure their freshness to be 
+                   coupled with our premium tea.</p>
+            </div>
+        </div>
+        <div class="content3">   
+            <p>
+                <img src="Image/shop.jpeg" alt="shop">
+                <h1>Our Shop</h1>
+                Not only that we also make sure our customer has a clean and nice dining enviroment, that is why we make sure we
+                have a clean and nice place for our customers.
+            </p>
+        </div>
+
+    </section>
+    <footer>
+        <div class="column">
+            <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+            <div class="contact-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="column1">
+            <div><a href="ass_contact.html">Contact</a></div>
+            <div>Career</div>
+            <div>Blog</div>
+        </div>
+        <div class="column2">
+            <div>Privacy</div>
+            <div>Security</div>
+            <div>Outlet</div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+    </script>
+</body>
+</html>

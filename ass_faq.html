@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+    <html>
+        <head>
+            <meta charset="utf-8" />
+            <title>Koala Tea</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link href="Css/b_faq.css" rel="stylesheet"/>
+            <link rel="icon" type="image/x-icon" href="Image/logo.png">
+            <script src="javascript.js"></script>
+            
+        </head>
+        <body>
+            <div id="preloader">
+                <img src="Image/loader.gif" alt="">
+            </div>
+            <header>
+                <nav>
+                    <div class="navbar-container">
+                        <div class="brand">
+                            <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                            <div><h1 class="name">Koala Tea</h1></div>
+                        </div>
+                        <div class="navbar" id="navbar">
+                            <a href="ass_homepage.html">Home</a>
+                            <a href="ass_menu.html">Menu</a>
+                            <a href="ass_aboutus.html">About Us</a>
+                            <a href="ass_review.html">Review</a>
+                            <a href="ass_faq.html">FAQ</a>
+                            <a href="ass_membership.html">Membership</a>
+                        </div>
+                            
+                        <div class="icon">
+                            <i id="search" class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                            <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                            <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                            <i id="bars" class="fa-solid fa-bars" onclick="navBar2()"></i>
+                        </div>
+                        <div id="search-form">
+                            <input type="search" id="search-box" placeholder="search...">
+                            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                            <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section>
+                <div id="FAQ">
+                    <h2>FAQ</h2>
+                </div>
+    
+                
+                <div id="questions">
+    
+                    <details>
+                        <summary>&nbsp When are we open?<span>&#10010</span></summary>
+                        <p>All of our stores are open from 7:00 a.m. to 10:00 p.m.</p>
+                    </details>
+    
+                    </br>
+    
+                    <details>
+                        <summary>&nbsp Can you become a member? <span>&#10010</span></summary> 
+                        <p>Yes. We have recently started a membership program where we offer special discounts and rewards to all our members. You can register as a member on our memebership page of our website.</p>
+                    </details>
+    
+                    <br/>
+    
+                    <details>
+                        <summary>&nbsp What are the rewards offered for members? <span>&#10010</span></summary> 
+                        <p>There are many rewards and offers for our members. First, members can get a free drink of their choice after any purchase during their birthday. Members who recommend a friend to join the membership program will receive an RM 5.00 voucher as a thank you gift. There are many perks and benefits to be had by joining as a member. If interested, you can check out our membership page of our website for more information.</p>
+                    </details>
+    
+                    <br/>
+    
+                    <details>
+                        <summary>&nbsp Can I order drinks online? <span>&#10010</span></summary>
+                        <p>Yes. You can order drinks on our website at the Product page by clicking the "Add to cart" button on any beverage you'd like to order. Then, you can select any location our physical store of your choice for pick up. After completing your transaction, a QR code will be generated. You can then arrive at the store you chose and there will be a self pick up station where yo can pick up your order.</p>
+                    </details>
+    
+                    <br/>
+                    
+                    <details>
+                        <summary>&nbsp Are you open everyday? <span>&#10010</span></summary>
+                        <p>We are open everyday 7 days a week, except during the last day of every month. We are also open on Public Holidays. Any unexpected closing of the store will be notified on our website and social media.</p>
+                    </details>
+    
+                </div>
+    
+    
+               <div id="extraQuestions">
+                <div class="questionbox">
+                    <h2>Any more questions?</h2>
+                    <p>Leave a question below, we'll love to hear it!</p><br>
+    
+                    <div id="question_form">
+                        <label for="user_email">Your email</label>
+                        <input type="email" id="user_email" required placeholder="email"/>
+                        <textarea id="Customer_Questions" rows="7" col="100" placeholder="Ask us a question"></textarea>                
+                        <div class="button"><button type="button" id="submit_button">Send</button></div>
+                    </div>
+                </div>   
+               </div>
+            </section>
+            <footer>
+                <div class="column">
+                    <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+                </div>
+                <div class="column1">
+                    <div><a href="ass_contact.html">Contact</a></div>
+                    <div>Career</div>
+                    <div>Blog</div>
+                </div>
+                <div class="column2">
+                    <div>Privacy</div>
+                    <div>Security</div>
+                    <div>Outlet</div>
+                </div>
+            </footer>
+            
+            <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+            <script>
+                var loader = document.getElementById('preloader');
+        
+                window.addEventListener("load", function(){
+                loader.style.display = 'none';
+            })
+            </script>
+        </body>
+    </html>

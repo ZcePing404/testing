@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Membership</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/x-icon" href="Image/logo.png">
+        <link href="Css/b_membership.css" rel="stylesheet"/>
+        <script src="javascript.js"></script>
+    </head>
+
+    <body>
+        <div id="preloader">
+            <img src="Image/loader.gif" alt="">
+        </div>
+        <header>
+            <nav>
+                <div class="navbar-container">
+                    <div class="brand">
+                        <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                        <div><h1 class="name">Koala Tea</h1></div>
+                    </div>
+                    <div class="navbar" id="navbar">
+                        <a href="ass_homepage.html">Home</a>
+                        <a href="ass_menu.html">Menu</a>
+                        <a href="ass_aboutus.html">About Us</a>
+                        <a href="ass_review.html">Review</a>
+                        <a href="ass_faq.html">FAQ</a>
+                        <a href="ass_membership.html">Membership</a>
+                    </div>
+                        
+                    <div class="icon">
+                        <i id="search" class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                        <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                        <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                        <i id="bars" class="fa-solid fa-bars" onclick="navBar4()"></i>
+                    </div>
+                    <div id="search-form">
+                        <input type="search" id="search-box" placeholder="search...">
+                        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <aside>
+            <div id="nonHeader">
+                <div id="enjoyRewards">
+                    <h1 id="becomeAMember">Become a Member</h1>
+    
+                    <section id="membershipHeading">
+                    <p>Enjoy our beverages and drinks? Become a member to get special <span id="offers_n_rewards">offers and rewards!!</span></p>
+                    <br/>
+                    <br/>
+                    <button id="joinMember" onclick="window.location.href='#registerNow'">JOIN NOW</button>
+                    </section>
+                </div>
+    
+                <div id="perks">
+    
+                    <h2 id="perks">Your benefits include: </h2>
+                        
+    
+                    <section id="birthday">
+                        <h3>Birthday Special</h3>
+                        <div class="content">
+                            <p>For your birthday, we offer a buy one free one promortion on any of our beverages</p>
+                            <img src="Image/Birthday_Rewards.png" id="birthdayImage"/>
+                        </div>
+                    </section>
+    
+                    <section id="referral">
+                        <h3>Referral Rewards</h3>
+                        <div class="content">
+                            <img src="Image/referral.png" id="referralImage"/>
+                            <p>You can claim a RM 5.00 voucher for every friend you recommend to join as a member.</p>
+                        </div>
+                    </section>
+    
+                    <section id="bonus">
+                        <h3>Bonus Points</h3>
+                        <div class="content">
+                            <p>Earn 15 points in your member account for every RM 50.00 you spend on our beverages. You can win attractive prizes  when you accumulated enough points.</p>
+                            <img src="Image/bonus_points.png" id="bonusImage"/>
+                        </div>
+                    </section>
+    
+                    <section id="happyHours">
+                        <h3>Happy Hour</h3>
+                        <div class="content">
+                            <img src="Image/happy_hour.png" id="happyImage"/>
+                            <p>Members can enjoy a 30% discount on all our drink every Friday from 6:00 p.m. to 7:00 p.m.</p>
+                        </div>
+                    </section>
+                </div>
+    
+            <div id="formRegister">
+    
+                    <h2 id="registerNow">Register Now</h2>       
+                <form>
+                    <img src="Image/register_now.jpg" alt="image" id="formImage"/>
+                    <fieldset>
+                        <legend>Personal Details</legend>
+                        
+                        <div id="details">
+                            <label for="name">Username:</label><br/>
+                            <input id="name" name="Name" type="text" placeholder="Full Name" required/>
+                            <br/>
+                            <br/>
+                            
+                            <label for="IC">IC Number:</label><br/>
+                            <input id="IC" name="IC" type="number" placeholder="nnnnnn-nn-nnnn" required/>
+                            <br/>
+                            <br/>
+    
+                            <label for="phone">Phone Number:</label><br/>
+                            <input id="phone" name="Phone" type="tel" placeholder="012-3456789" pattern="[0-9]{3}-[0-9]{7}" required/>
+                            <br/>
+                            <br/>
+    
+                            <label for="email">Email:</label><br/>
+                            <input id="email" name="Email" type="email" placeholder="example123@example.com" required/>
+                            <br/>
+                            <br/>
+    
+                            <label for="password">Password:</label><br/>
+                            <input id="password" name="Password" type="password" placeholder="At least 12 characters" required/>
+                            <div class="registerComfirm">
+                                <input type="checkbox" onclick="show()" id="showPassword">
+                                <br/>
+                                <br/>
+        
+                                <input style="width: 10px;"id="termsNcondition" type="checkbox" required/>
+                                <label id="termsNcondition" for="terms&condition">I have read and accepted the <span style="color:blue;text-decoration: underline;">Terms &amp Condition</span></label>
+                                
+                                <br/>
+                                <br/>
+        
+                                <input class="submitButton" type="submit" value="Sign Up" />
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+                
+            </div>
+        </aside>
+        <footer>
+            <div class="column">
+                <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="column1">
+                <div><a href="ass_contact.html">Contact</a></div>
+                <div>Career</div>
+                <div>Blog</div>
+            </div>
+            <div class="column2">
+                <div>Privacy</div>
+                <div>Security</div>
+                <div>Outlet</div>
+            </div>
+        </footer>
+        
+        <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+        <script>
+            var loader = document.getElementById('preloader');
+    
+            window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+        </script>
+    </body>
+</html>

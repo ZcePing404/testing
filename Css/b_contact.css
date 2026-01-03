@@ -1,0 +1,413 @@
+@charset "uft-8";
+
+/* Basic styles to be used with all devices and under all conditions */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote,body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul,
+table, tr, td, th, col, colgroup {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+:root {
+    --green: #7FB185;
+    --main-color: #F9F6E7;
+}
+
+html {
+    background-color: var(--main-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+#preloader{
+    background-color: var(--main-color);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#preloader img{
+    height: 30%;
+    width: 18%;
+}
+
+/*Header Design*/
+header {
+    background-color: var(--green);
+}
+
+.navbar-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.brand {
+    display: flex;
+    flex-grow: 2;
+    position: relative;
+    justify-content: center;
+}
+
+.brand h1 {
+    font-size: 20px;
+}
+
+.name {
+    padding-top: 35px;
+}
+
+.logo {
+    width: 120px;
+    height: 90px;
+}
+
+.navbar {
+    flex-grow: 5;
+    position: relative;
+    top: 2.3em;
+    text-align: right;
+}
+
+.navbar a{
+    margin-left: 5.5%;
+    position: relative;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 100%;
+    height: 2px;
+    width: 0;
+    background-color: white;
+    transition: .3s;
+    border-radius: 27%;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+.navbar a:link,.navbar a:visited {
+    color: black;
+}
+
+.navbar a:hover,.navbar a:active {
+    color: white;
+}
+
+.icon {
+    position: relative;
+    text-align: center;
+    top: .9em;
+    font-size: 30px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.icon a:link,
+.icon a:visited {
+    color: black;
+}
+
+.icon a:hover,
+.icon a:active {
+    color: white;
+}
+
+.contact-icon i:link,
+.icon i:visited,
+.contact-icon i:link,
+.contact-icon i:visited{
+    color: black;
+}
+
+.icon i:hover,
+.icon i:active,
+.contact-icon i:hover,
+.contact-icon i:active {
+    color: white;
+}
+
+.contact-icon{
+    cursor: pointer;
+}
+
+#bars {
+    display: none;
+}
+
+#search-form {
+    position: fixed;
+    top: -110%;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    z-index: 2;
+    padding: 0 1rem;
+}
+
+#search-form #search-box {
+    width: 20rem;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid white;
+    padding: 1rem 0;
+    color: #fff;
+    font-size: 25px;
+    background: none;
+    text-transform: none;
+}
+
+#search-box::placeholder {
+    color: #fff;
+}
+
+#search-form #search-box::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+}
+
+#search-form label {
+    color: #fff;
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#search-form label:hover {
+    color: var(--green);
+}
+
+#search-form #close {
+    position: absolute;
+    right: 2%;
+    top: 14%;
+    color: #fff;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+
+
+
+
+/*Contact us only section*/
+
+.contactus{
+    text-align: center;
+    margin-top: 1.5cm;
+    font-size: 300%;
+    margin-bottom: 1.5cm;
+}
+
+section{
+    margin-left: 1.5cm;
+    float: left;
+    margin-right: 1.5cm;
+}
+
+aside{
+    margin-right: 1.5cm;
+    margin-left: 1.5cm;
+}
+
+div.findusat{
+    clear: both;
+    text-align: center;
+    margin: 2cm;
+    font-size: 150%;
+}
+
+.findusat p{
+    margin: 0.6cm;
+    text-align: center;
+}
+
+
+/*Contact form section*/
+
+label{
+    clear: both;
+    position: relative;
+}
+
+.contact-form{
+    margin: 1.5em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+label,input,textarea,button{
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form label {
+    margin-bottom: 8px;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 8px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.contact-form button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/*Footer*/
+
+footer{
+    background-color: var(--green);
+    display: flex;
+    overflow: hidden;
+    padding: 40px 0 15px 0;
+}
+
+.column{
+    display: block;
+    flex-grow: 3;
+    flex-shrink: 1;
+    position: relative;
+    top: 20px;
+    left: 10%;
+}
+
+.column h2 {
+    font-size: 30px;
+}
+
+.column1,
+.column2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.contact-icon {
+    font-size: 35px;
+}
+
+.column1 div,
+.column2 div {
+    margin-bottom: 25px;
+}
+
+.column1 a:link,.column1 a:visited {
+    color: black;
+}
+
+.column1 a:hover,.column1 a:active {
+    color: white;
+}
+
+@media (max-width: 920px){
+    .brand {
+        flex-grow: 10;
+        justify-content: left;
+    }
+
+    #bars {
+        display: inline;
+    }
+
+    .navbar {
+        height: 0;
+        width: 100%;
+        position: absolute;
+        top: 12%;
+        background-color: var(--green);
+        z-index: 1;
+        overflow-X: hidden;
+        transition: 1s;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 15px;
+        border: 1px solid black;
+        margin: 10px 10px 10px 10px;
+        justify-content: center;
+        font-size: 25px;
+        text-align: center;
+        background-color: var(--main-color);
+    }
+
+    .icon {
+        float: right;
+    }
+
+/*article*/
+.contactus{
+    transition: 1s;
+}
+
+/*footer*/
+.column h2 {
+    font-size: 20px;
+}
+}
+
+@media(max-width:890px){
+    .contact-form{
+        clear: both;
+    }
+}
+
+@media(max-width:650px){
+    iframe{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width:480px){
+    /*footer*/
+    .column{
+        margin-right: 6.5%;
+    }
+
+    .column1{
+        position: relative;
+        right: 10px;
+    }
+    .column2{
+        position: relative;
+        right: 10px;
+    }
+}

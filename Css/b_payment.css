@@ -1,0 +1,462 @@
+@charset "utf-8";
+
+/* Basic styles to be used with all devices and under all conditions */
+
+article, aside, figcaption, figure,
+footer, header, main, nav, section { 
+   display: block;
+}
+
+address, article, aside, blockquote, body, cite, 
+div, dl, dt, dd, em, figcaption, figure, footer, 
+h1, h2, h3, h4, h5, h6, header, html, img, 
+li, main, nav, nav a, ol, p, section, span, ul,
+table, tr, td, th, col, colgroup {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   background: transparent;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;  
+}
+
+:root {
+  --green: #7FB185;
+  --main-color: #F9F6E7;
+}
+
+html {
+  background-color: var(--main-color);
+}
+
+article {
+  height: 50rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#preloader {
+  background-color: var(--main-color);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#preloader img {
+  height: 30%;
+  width: 18%;
+}
+
+/* Header Design */
+header {
+  background-color: var(--green);
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.brand {
+  display: flex;
+  flex-grow: 2;
+  position: relative;
+  justify-content: center;
+}
+
+.brand h1 {
+  font-size: 20px;
+}
+
+.name {
+  padding-top: 35px;
+}
+
+.logo {
+  width: 120px;
+  height: 90px;
+}
+
+.navbar {
+  flex-grow: 5;
+  position: relative;
+  top: 2.3em;
+  text-align: right;
+}
+
+.navbar a {
+  margin-left: 5.5%;
+  position: relative;
+}
+
+.navbar a::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 100%;
+  height: 2px;
+  width: 0;
+  background-color: white;
+  transition: .3s;
+  border-radius: 27%;
+}
+
+.navbar a:hover::before {
+  width: 100%;
+}
+
+.navbar a:link,
+.navbar a:visited {
+  color: black;
+}
+
+.navbar a:hover,
+.navbar a:active {
+  color: white;
+}
+
+.icon {
+  position: relative;
+  text-align: center;
+  top: .9em;
+  font-size: 30px;
+  flex-grow: 1;
+  cursor: pointer;
+}
+
+.icon a:link,
+.icon a:visited {
+  color: black;
+}
+
+.icon a:hover,
+.icon a:active {
+  color: white;
+}
+
+.icon i:link,
+.icon i:visited,
+.contact-icon i:link,
+.contact-icon i:visited {
+  color: black;
+}
+
+.icon i:hover,
+.icon i:active,
+.contact-icon i:hover,
+.contact-icon i:active {
+  color: white;
+}
+
+.contact-icon {
+  cursor: pointer;
+}
+
+#bars {
+  display: none;
+}
+
+#search-form {
+  position: fixed;
+  top: -110%;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2;
+  padding: 0 1rem;
+}
+
+#search-form #search-box {
+  width: 20rem;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid white;
+  padding: 1rem 0;
+  color: #fff;
+  font-size: 25px;
+  background: none;
+  text-transform: none;
+}
+
+#search-box::placeholder {
+  color: #fff;
+}
+
+#search-form #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+#search-form label {
+  color: #fff;
+  cursor: pointer;
+  font-size: 25px;
+}
+
+#search-form label:hover {
+  color: var(--green);
+}
+
+#search-form #close {
+  position: absolute;
+  right: 2%;
+  top: 14%;
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+/*stuff*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
+
+}
+
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%;
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%;
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%;
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 24px;
+}
+
+section{
+  margin: 2% 2%;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin: 20px;
+  margin-right: 40px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 16px;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background: linear-gradient(to bottom, #04AA6D, #03845e);
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background: linear-gradient(to bottom, #03845e, #04AA6D);
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+span.total {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Style the form element with a border around it */
+form {
+  border: 4px solid #f1f1f1;
+}
+
+/* Add some padding and a grey background color to containers */
+.newsletter {
+  padding: 20px;
+  background-color: #f1f1f1;
+  padding-bottom: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the input elements and the submit button */
+input[type=text],
+input[type=submit] {
+  width: 100%;
+  padding: 8px;
+  margin: 4px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  border: none;
+}
+
+input[type=submit]:hover {
+  opacity: 0.9;
+}
+
+/* Footer */
+footer{
+  background-color: var(--green);
+  display: flex;
+  overflow: hidden;
+  padding: 40px 0 15px 0;
+}
+
+.column{
+  display: block;
+  flex-grow: 3;
+  flex-shrink: 1;
+  position: relative;
+  top: 20px;
+  left: 10%;
+}
+
+.column h2 {
+  font-size: 30px;
+}
+
+.column1,
+.column2 {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.contact-icon {
+  font-size: 35px;
+}
+
+.column1 div,
+.column2 div {
+  margin-bottom: 25px;
+}
+
+.column1 a:link,.column1 a:visited {
+  color: black;
+}
+
+.column1 a:hover,.column1 a:active {
+  color: white;
+}
+
+@media (max-width: 920px) {
+  .brand {
+    flex-grow: 10;
+    justify-content: left;
+  }
+
+  #bars {
+    display: inline;
+  }
+
+  .navbar {
+    height: 0;
+    width: 100%;
+    position: absolute;
+    top: 12%;
+    background-color: var(--green);
+    z-index: 1;
+    overflow-x: hidden;
+    transition: 1s;
+  }
+
+  .navbar a {
+    display: block;
+    padding: 15px;
+    border: 1px solid black;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    font-size: 25px;
+    text-align: center;
+    background-color: var(--main-color);
+  }
+
+  .icon {
+    float: right;
+  }
+}
+
+/*section*/
+section {
+  transition: 1s;
+}
+
+@media (max-width: 480px) {
+
+  /*footer*/
+  .column {
+    margin-right: 6.5%;
+  }
+
+  .column1 {
+    position: relative;
+    right: 10px;
+  }
+
+  .column2 {
+    position: relative;
+    right: 10px;
+  }
+}

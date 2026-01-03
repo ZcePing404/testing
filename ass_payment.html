@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/b_payment.css" class="css" />
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <title>Koala Tea</title>
+    <script src="javascript.js"></script>
+    <!-- Include any additional stylesheets or scripts here -->
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <div class="brand">
+                    <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                    <div>
+                        <h1 class="name">Koala Tea</h1>
+                    </div>
+                </div>
+                <div class="navbar" id="navbar">
+                    <a href="ass_homepage.html">Home</a>
+                    <a href="ass_menu.html">Menu</a>
+                    <a href="ass_aboutus.html">About Us</a>
+                    <a href="ass_review.html">Review</a>
+                    <a href="ass_faq.html">FAQ</a>
+                    <a href="ass_membership.html">Membership</a>
+                </div>
+
+                <div class="icon" id="search-icon">
+                    <i id="search" class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                    <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                    <a href="ass_member_account.html" id="login" class="fa-solid fa-user"></a>
+                    <i id="bars" class="fa-solid fa-bars" onclick="navBar5()"></i>
+                </div>
+                <div id="search-form">
+                    <input type="search" id="search-box" placeholder="search...">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   <section>
+    <div class="row">
+        <div class="col-75">
+            <form>
+                <div class="row">
+                    <div class="col-50">
+                        <h3>Billing Address</h3>
+                        <label for="fname">Full Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Ali">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Ali@example.com">
+                        <label for="adr">Address</label>
+                        <input type="text" id="adr" name="address" placeholder="Tarumt">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="city" placeholder="Setapak">
+
+                        <div class="row">
+                            <div class="col-50">
+                                <label for="state">State</label>
+                                <input type="text" id="state" name="state" placeholder="Kuala Lumpur">
+                            </div>
+                            <div class="col-50">
+                                <label for="zip">Zip</label>
+                                <input type="text" id="zip" name="zip" placeholder="52000">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-50">
+                        <h3>Payment</h3>
+
+                        <div class="payment-options">
+                            <label for="payment-method">Select Payment Method:</label>
+                            <select id="payment-method" name="payment-method">
+                                <option value="online banking">Online Banking</option>
+                                <option value="debit card">Debit Card</option>
+                            </select>
+                            <label for="cname">Name on Card</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Ali">
+                            <label for="ccnum">Credit card number</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                            <label for="expmonth">Exp Month</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Exp Year</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2024">
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="352">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <label>
+                    <input type="checkbox" checked="checked" name="sameadr"> Remember Address for next purchase
+                </label>
+                <input type="submit" value="Continue to checkout" class="btn">
+            </form>
+        </div>
+
+        <div class="col-25">
+            <div class="container">
+                <h4>Cart
+                    <span class="price"></span>
+                </h4>
+                <div id="paymentList"></div>
+                <hr>
+                <p>Total<span id="totalPayment" class="price"></span></p>
+            </div>
+        </div> 
+    </div>
+   </section>
+
+    <footer>
+        <div class="column">
+            <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+            <div class="contact-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="column1">
+            <div><a href="ass_contact.html">Contact</a></div>
+            <div>Career</div>
+            <div>Blog</div>
+        </div>
+        <div class="column2">
+            <div>Privacy</div>
+            <div>Security</div>
+            <div>Outlet</div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+
+    paymentList()
+    </script>
+</body>
+
+</html>

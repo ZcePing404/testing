@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Tea</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <link rel="stylesheet" href="Css/b_customize.css">
+    <script src="javascript.js"></script>
+</head>
+<body>
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <header>
+        <nav>
+            <div class="navbar-container">
+                <div class="brand">
+                    <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                    <div><h1 class="name">Koala Tea</h1></div>
+                </div>
+                <div class="navbar" id="navbar">
+                    <a href="ass_homepage.html">Home</a>
+                    <a href="ass_menu.html">Menu</a>
+                    <a href="ass_aboutus.html">About Us</a>
+                    <a href="ass_review.html">Review</a>
+                    <a href="ass_faq.html">FAQ</a>
+                    <a href="ass_membership.html">Membership</a>
+                </div>
+                    
+                <div class="icon">
+                    <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                    <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                    <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                    <i id="bars" class="fa-solid fa-bars"  onclick="navBar2()"></i>
+                </div>
+                <div id="search-form">
+                    <input type="search" id="search-box" placeholder="search...">
+                    <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                    <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="image-order">
+            <img src="Image/milk2.png" alt="CLASSIC ROASTED MILK TEA" id="order">
+        </div>
+        <div class="details">
+            <div class="product">
+                <h1 id="name">CLASSIC ROASTED MILK TEA</h1>
+                <p id="cost">RM7.50</p>
+            </div>
+            <select id="size">
+                <option disabled>Size</option>
+                <option value="7.5">Regular</option>
+                <option value="9.5">Large +RM2.00</option>
+            </select>
+            <select>
+                <option disabled>Sugar</option>
+                <option>Normal Sugar</option>
+                <option>Less sugar</option>
+            </select>
+            <select>
+                <option disabled>Ice</option>
+                <option>Normal Ice</option>
+                <option>Less Ice</option>
+                <option>No Ice</option>
+            </select>
+            <h2>Add Toppings</h2>
+            <div class="toppinglist">
+                <div class="toppinglist1">
+                    <div>
+                        <input type="checkbox" name="topping1" id="topping1">
+                        <label for="topping1">3Q</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="topping2" id="topping2">
+                        <label for="topping2">Aloe Vera</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="topping3" id="topping3">
+                        <label for="topping3">Pearl</label>
+                    </div>
+                </div>
+                <div class="toppinglist2">
+                    <div>
+                        <input type="checkbox" name="topping4" id="topping4">
+                        <label for="topping4">Pudding</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="topping5" id="topping5">
+                        <label for="topping5">Coconut Jelly</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="topping6" id="topping6">
+                        <label for="topping6">Sago</label>
+                    </div>
+                </div>
+            </div>
+            <div class="details1">
+                <input type="number" value="1" id="numOfCup">
+                <a href="ass_menu.html" class="atc" onclick="count()">Add To Cart</a>
+            </div>
+            <p>Add Instruction</p>
+            <textarea name="command" id="command" cols="50" rows="11.5"></textarea>
+        </div>
+    </section>
+
+    <article>
+        <h1>Featured Drinks</h1>
+        <p>The chosen ones</p>
+        <div id="box-containermilktea">
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="greentea3">
+                    <img class="green3" src="Image/greentea3.png" alt="NISHIO MATCHA MILK TEA RED BEAN">
+                    <h3>NISHIO MATCHA MILK TEA RED BEAN</h3>
+                    <span>RM9.80</span>
+                    <a href="#" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)"></i>
+                <div class="bobatea4">
+                    <img class="boba4" src="Image/boba4.png" alt="BANG BANG CHOCOLATE">
+                    <h3>BANG BANG CHOCOLATE</h3>
+                    <span>RM8.40</span>
+                    <a href="#" class="atc">Order Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-eye"></i>
+                <i class="fa-solid fa-heart" id="heart-icon" onclick="favorite(this)" ></i>
+                <div class="milktea5">
+                    <img class="milk5" src="Image/milk5.png" alt="BLACK DIAMOND MILK TEA">
+                    <h3>BLACK DIAMOND MILK TEA</h3>
+                    <span>RM8.60</span>
+                    <a href="#" class="atc">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+    <footer>
+        <div class="column">
+            <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+            <div class="contact-icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+            </div>
+        </div>
+        <div class="column1">
+            <div><a href="ass_contact.html">Contact</a></div>
+            <div>Career</div>
+            <div>Blog</div>
+        </div>
+        <div class="column2">
+            <div>Privacy</div>
+            <div>Security</div>
+            <div>Outlet</div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+    </script>
+</body>
+</html>

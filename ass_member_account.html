@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Member Account</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="icon" type="image/x-icon" href="Image/logo.png">
+        <link href="Css/b_memberAcc.css" rel="stylesheet"/>
+        <script src="javascript.js"></script>
+    </head>
+
+    <body>
+        <div id="preloader">
+            <img src="Image/loader.gif" alt="">
+        </div>
+        <header>
+            <nav>
+                <div class="navbar-container">
+                    <div class="brand">
+                        <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                        <div><h1 class="name">Koala Tea</h1></div>
+                    </div>
+                    <div class="navbar" id="navbar">
+                        <a href="ass_homepage.html">Home</a>
+                        <a href="ass_menu.html">Menu</a>
+                        <a href="ass_aboutus.html">About Us</a>
+                        <a href="ass_review.html">Review</a>
+                        <a href="ass_faq.html">FAQ</a>
+                        <a href="ass_membership.html">Membership</a>
+                    </div>
+                        
+                    <div class="icon">
+                        <i id="search" class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                        <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                        <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                        <i id="bars" class="fa-solid fa-bars" onclick="navBar2()"></i>
+                    </div>
+                    <div id="search-form">
+                        <input type="search" id="search-box" placeholder="search...">
+                        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                        <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <section>
+            <div id="account_info">
+
+                <div id="image_n_name">
+                    <img id="user_image" src="Image/user_image.png" alt="User profile image"/>
+                    <h2 id="user_name">Mr. Koala</h2>
+                    <p style="font-weight:bold;">Favourite Beverage</p>
+                    <br/>
+                    <img src="Image/milk1.png" alt="Pearl Milk Tea" id="favourite"/>
+                    <br/>
+                    <p style="margin-top:30px;">Pearl Milk Tea</p>
+                </div>
+    
+                <br/>
+    
+                <div id="user_profile">
+                    <p id="profile" style="font-family:'Courier New', Courier, monospace;font-weight:bolder;">Profile</p>
+
+                    <div id="user_info">
+                        <table id="info-table">
+                            <tr><th>Birthday</th> <td>31 July 2003</td></tr>
+                            <tr><th>Gender</th> <td>Male</td></tr>
+                            <tr><th>Email</th> <td>koala.198@gmail.com</td></tr>
+                            <tr><th>Phone number</th> <td>012-3454321</td></tr>                   
+                            <tr><th>Member Points</th> <td>45 points</td></tr>
+                        </table>
+                    </div>
+    
+                    <div id="order_info">
+                        <div>
+                            <p><a href="ass_addtocart.html"> My Order</a></p>
+                            <br/>
+                            <br/>
+                            <p class="order">Order history</p>
+                            
+                            <table>
+                                <tr><th><img src="Image/milk1.png" alt="Pearl Milk Tea"/></th><td>Pearl Milk Tea</td></tr>                        
+                                <tr><th><img src="Image/milk1.png" alt="Pearl Milk Tea"/></th><td>Pearl Milk Tea</td></tr>                        
+                                <tr><th><img src="Image/milk2.png" alt="Classic Roasted Milk Tea"/></th><td>Classic Roasted Milk Tea</td></tr>
+                            
+                            </table>
+                        </div>
+                    </div>
+    
+    
+                    <div id="voucher">
+                        <p id="claim_voucher">Claim voucher</p>
+                        <div class="voucher-box">
+                            <input type="text" id="voucher_code" placeholder="Voucher Code"/>
+                            <button type="button" id="claim">Claim</button>
+                        </div>
+                    </div>
+    
+                    
+    
+                    <button id="log_out" type="button">Log Out</button>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="column">
+                <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="column1">
+                <div><a href="ass_contact.html">Contact</a></div>
+                <div>Career</div>
+                <div>Blog</div>
+            </div>
+            <div class="column2">
+                <div>Privacy</div>
+                <div>Security</div>
+                <div>Outlet</div>
+            </div>
+        </footer>
+        
+        <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+        <script>
+            var loader = document.getElementById('preloader');
+    
+            window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+        </script>
+    </body>
+
+</html>

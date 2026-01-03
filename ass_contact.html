@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koala Tea</title>
+    <link rel="stylesheet" href="Css/b_contact.css">
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <script src="javascript.js"></script>
+</head>
+<header>
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <nav>
+        <div class="navbar-container">
+            <div class="brand">
+                <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                <div><h1 class="name">Koala Tea</h1></div>
+            </div>
+            <div class="navbar" id="navbar">
+                <a href="ass_homepage.html">Home</a>
+                <a href="ass_menu.html">Menu</a>
+                <a href="ass_aboutus.html">About Us</a>
+                <a href="ass_review.html">Review</a>
+                <a href="ass_faq.html">FAQ</a>
+                <a href="ass_membership.html">Membership</a>
+            </div>
+                
+            <div class="icon">
+                <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                <a href="ass_member_account.html" class="fa-solid fa-user"></a>
+                <i id="bars" class="fa-solid fa-bars"  onclick="navBar3()"></i>
+            </div>
+            <div id="search-form">
+                <input type="search" id="search-box" placeholder="search...">
+                <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+                <i id="close" class="fa-solid fa-xmark" onclick="closebtn()"></i>
+            </div>
+        </div>
+    </nav>
+</header>
+
+    <body class="contactusform">
+        <div class="contactus">
+            <h1>
+                <strong>Get in touch with us!</strong>
+            </h1>
+        </div>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.5439493851018!2d101.72446731016689!3d3.213683452739834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc386a4bc3ff01%3A0x73e6ad54c6e0ddaa!2sTARUMT%20PINTU%202!5e0!3m2!1sen!2smy!4v1693241823814!5m2!1sen!2smy" 
+            width="600" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </section>
+
+        <aside class="contact-form">
+            <form id="contactform" onsubmit="return formValidity();">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email">
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="3" required></textarea>
+                
+                <button id="submit" type="submit">Send</button>
+            </form>
+        </aside>
+        
+        <div class="findusat">
+            <h1>Find us at our outlet or contact us!</h1><br>
+            <p class="location">
+            <i class="fa-solid fa-location-dot"></i>
+                Jalan Malinja, Taman Bunga Raya
+            53300 Kuala Lumpur, Wilayah
+            Persekutuan Kuala Lumpur
+            </p>
+
+            <p class="telnumber"><i class="fa-solid fa-phone"></i> +6012-345-6789</p>
+                
+            <p class="operatinghours"><i class="fa-solid fa-clock"></i> 10:30am - 11:00pm</p>
+
+            <p class="operatingdays"><i class="fa-solid fa-calendar-days"></i> Opened from Monday to Saturday</p>
+
+        </div>
+        <footer>
+            <div class="column">
+                <h2>Koala Tea SDN.BHD. &copy; All Right Reserved</h2>
+                <div class="contact-icon">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="column1">
+                <div><a href="ass_contact.html">Contact</a></div>
+                <div>Career</div>
+                <div>Blog</div>
+            </div>
+            <div class="column2">
+                <div>Privacy</div>
+                <div>Security</div>
+                <div>Outlet</div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="https://kit.fontawesome.com/728f872bb2.js" crossorigin="anonymous"></script>
+    <script>
+        var loader = document.getElementById('preloader');
+
+        window.addEventListener("load", function(){
+        loader.style.display = 'none';
+    })
+    </script>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Css/b_cart.css">
+    <title>Koala Tea</title>
+    <link rel="icon" type="image/x-icon" href="Image/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="javascript.js"></script>
+</head>
+
+<body>
+    <div id="preloader">
+        <img src="Image/loader.gif" alt="">
+    </div>
+    <div class="shopping-cart container my-5">
+        <header>
+            <nav>
+                <div class="navbar-container">
+                    <div class="brand">
+                        <div><a href="ass_homepage.html"><img class="logo" src="Image/logo.png" alt="Logo"></a></div>
+                        <div>
+                            <h1 class="name">Koala Tea</h1>
+                        </div>
+                    </div>
+                    <div class="navbar" id="navbar">
+                        <a href="ass_homepage.html">Home</a>
+                        <a href="ass_menu.html">Menu</a>
+                        <a href="ass_aboutus.html">About Us</a>
+                        <a href="ass_review.html">Review</a>
+                        <a href="ass_faq.html">FAQ</a>
+                        <a href="ass_membership.html">Membership</a>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-magnifying-glass" onclick="search()"></i>
+                        <a href="ass_cart.html" class="fa-solid fa-cart-shopping"></a>
+                        <a href="ass_member_account.html" class="fas fa-user"></a>
+                        <i id="bars" class="fa-solid fa-bars"  onclick="navBar2()"></i>
+                    </div>
+                    <div id="search-form">
+                        <input type="search" id="search-box" placeholder="Search...">
+                        <label for="search-box" class="fas fa-search"></label>
+                        <i id="close" class="fas fa-times" onclick="closebtn()"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <section id="cart" class="section-p1">
+            <table>
+                <thead>
+                    <tr>
+                        <td>Remove</td>
+                        <td>Image</td>
+                        <td>Product</td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </section>
+
+        <div id="emptyCart" class="cartEmpty">
+            <div><img src="Image/Empty-Cart-removebg-preview.png" alt="" class="emptyPicture"></div>
+            <div><a href="ass_menu.html" class="toMenu">Explore More Drinks</a></div>
+        </div>
+
+        <section id="cart-add" class="section-p1">
+            <div id="coupon">
+                <h3>Apply Coupon/Voucher</h3>
+                <div>
+                    <input type="text" placeholder="Enter Your Coupon">
+                    <button class="normal">Apply</button>
+                </div>
+            </div>
+
+            <div id="subtotal">
+                <h3>Carts Total</h3>
+                <table>
+                    <tr>
+                        <td>Cart Subtotal</td>
+                        <td id="amount"></td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Fees</td>
+                        <td>Free</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong id="totalAmount"></strong></td>
+                    </tr>
+                </table>
+                <button class="normal" onclick="checkout()">Proceed to checkout</button>
+            </div>
+        </section>
+
+        <footer>
+            <div class="column">
+                <h2>Koala Tea SDN.BHD. &copy; All Rights Reserved</h2>
+                <div class="contact-icon">
+                    <i class="fab fa-facebook"></i>
+                    <i class="fab fa-instagram"></i>
+                    <i class="fab fa-whatsapp"></i>
+                </div>
+            </div>
+            <div class="column1">
+                <div><a href="ass_contact.html">Contact</a></div>
+                <div>Career</div>
+                <div>Blog</div>
+            </div>
+            <div class="column2">
+                <div>Privacy</div>
+                <div>Security</div>
+                <div>Outlet</div>
+            </div>
+        </footer>
+
+        <script>
+            var loader = document.getElementById('preloader');
+    
+            window.addEventListener("load", function(){
+            loader.style.display = 'none';
+        })
+
+            newTable();
+            newTotal();
+            cancelButton();
+        </script>
+    </div>
+</body>
+
+</html>
